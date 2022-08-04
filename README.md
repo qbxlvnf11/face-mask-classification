@@ -12,6 +12,10 @@ Contents
 =============
 
 #### - [Face Mask Types Classification with RegNet backbone](https://github.com/qbxlvnf11/face-mask-classification/blob/main/Face%20Mask%20Type%20Classification.ipynb)
+  - Docker env run command
+```
+docker run --gpus all -it --rm -p 9000:9000 -e GRANT_SUDO=yes --user root -v {source code path}:/workspace -w /workspace pytorch/pytorch bash -c "pip install jupyter && pip install pandas && pip install seaborn && pip install sklearn && apt-get update && apt-get install -y python3-opencv && apt-get install gcc && apt-get install git && pip install torchmetrics && pip install tensorflow && pip install opencv-python && pip install torch_snippets torch_summary && jupyter notebook --ip='0.0.0.0' --port=9000 --allow-root"
+```
 
 Dataset
 =============
